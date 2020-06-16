@@ -153,18 +153,32 @@ bf_2019_data = bf_2019_data.drop(["年_Year", "男_Male", "女_Female",
 bf_2019_data = bf_2019_data.replace({'-': 0})
 #------------------------#
 
-
 #------Save_to_csv-------#
-bf_2000_data.to_csv('C:\\Users\\IRVING\\Desktop\\python_final_project\\15歲以上教育程度\\15歲以上教育程度_process_csv\\bf_2000.csv')
-bf_2013_data.to_csv('C:\\Users\\IRVING\\Desktop\\python_final_project\\15歲以上教育程度\\15歲以上教育程度_process_csv\\bf_2013.csv')
-bf_2019_data.to_csv('C:\\Users\\IRVING\\Desktop\\python_final_project\\15歲以上教育程度\\15歲以上教育程度_process_csv\\bf_2019.csv')
+bf_2000_data.to_csv('C:\\Users\\IRVING\\Desktop\\python_final_project\\15歲以上教育程度\\15歲以上教育程度_process_csv\\不同考試的升學比較\\bf_2000.csv')
+bf_2013_data.to_csv('C:\\Users\\IRVING\\Desktop\\python_final_project\\15歲以上教育程度\\15歲以上教育程度_process_csv\\不同考試的升學比較\\bf_2013.csv')
+bf_2019_data.to_csv('C:\\Users\\IRVING\\Desktop\\python_final_project\\15歲以上教育程度\\15歲以上教育程度_process_csv\\不同考試的升學比較\\bf_2019.csv')
 #------------------------#
 
 
 #------Show_all_img------#
-bf_2000_data.plot.bar(ylim=(0,20000))
-bf_2013_data.plot.bar(ylim=(0,25000))
-bf_2019_data.plot.bar(ylim=(0,30000))
+bf_2000_data.plot.bar(ylim=(0,25000), fontsize=15)
+plt.title("聯考 1978年 ~ 2000年", fontsize=50)
+plt.legend(fontsize=15)
+plt.xlabel('年度', fontsize=25)
+plt.ylabel('人數', fontsize=25)
+
+bf_2013_data.plot.bar(ylim=(0,30000), fontsize=15)
+plt.title("基測 2001年 ~ 2013年", fontsize=50)
+plt.legend(fontsize=15)
+plt.xlabel('年度', fontsize=25)
+plt.ylabel('人數', fontsize=25)
+
+bf_2019_data.plot.bar(ylim=(0,20000), fontsize=15)
+plt.title("會考 2014年 ~ 2019年", fontsize=50)
+plt.legend(fontsize=15)
+plt.xlabel('年度', fontsize=25)
+plt.ylabel('人數', fontsize=25)
 plt.show()
 #------------------------#
+
 

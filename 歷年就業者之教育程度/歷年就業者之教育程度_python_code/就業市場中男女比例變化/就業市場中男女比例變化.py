@@ -105,7 +105,7 @@ except:
 #------Save_to_csv-------#
 Senior_high_compare.to_csv('C:\\Users\\IRVING\\Desktop\\python_final_project\\歷年就業者之教育程度\\歷年就業者之教育程度_process_csv\\就業市場中男女比例變化.csv')
 #------------------------#
-print(Senior_high_compare)
+
 
 #------Show_all_img------#
 for i in range(0, 42, 2):

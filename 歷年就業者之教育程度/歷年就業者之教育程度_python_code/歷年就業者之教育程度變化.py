@@ -112,7 +112,7 @@ for i in range(0, 42, 2):
     year_af_1978_xticks.append(year_af_1978[i])
 Senior_high_compare.plot(ylim=(0,17000), fontsize=15)
 plt.xticks(np.arange(1978, 2019, step = 2), year_af_1978_xticks)
-plt.yticks(np.arange(0, 19000, step = 1000))
+plt.yticks(np.arange(0, 19000, step = 2000))
 plt.title("歷年就業者之教育程度變化 1978年 ~ 2019年", fontsize=50)
 plt.legend(loc='upper left', fontsize=15)
 plt.xlabel('年度', fontsize=25)
